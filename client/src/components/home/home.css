@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'gilroy';
+}
+
+.container {
+  height: 100vh;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+.vector-graphics {
+  filter: drop-shadow(0 40px 10px rgba(0, 0, 0, 0.3));
+  animation-name: vectorAnimation;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vectorAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.brandsBanner {
+  /* background-color: aquamarine; */
+  margin-top: 25px;
+  padding: 10px 0 10px 0;
+}
+
+.brandsBanner > svg {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.5s;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.brandsBanner > svg:hover {
+  color: yellow;
+}
+
+.container2 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: blanchedalmond; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 video {
+  width: 60%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0 0 0 10 black;
+}
